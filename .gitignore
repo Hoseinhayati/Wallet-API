@@ -1,0 +1,45 @@
+## Visual Studio temporary files, build results
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache
+.vs/
+.vscode/
+.idea/
+
+# .NET Core
+project.lock.json
+artifacts/
+
+# Test Results
+TestResult.xml
+*.trx
+
+# Node
+node_modules/
+
+# Docker
+docker-compose.override.yml
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+
+# Logs
+*.log
