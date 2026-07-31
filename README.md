@@ -119,8 +119,8 @@ Each service follows Clean Architecture principles:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/DigitalWallet.git
-cd DigitalWallet
+git clone https://github.com/Hoseinhayati/Wallet-API.git
+cd Wallet-API
 ```
 
 2. **Start infrastructure services**
