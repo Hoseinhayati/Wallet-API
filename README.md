@@ -4,7 +4,7 @@ A modern digital wallet system built with .NET 8 and microservices architecture,
 
 ## 🎯 Overview
 
-This project showcases a production-ready digital wallet platform that handles wallet management and financial transactions. Built with scalability, maintainability, and best practices in mind.
+This project is a reference implementation of a digital wallet platform that handles wallet management and financial transactions. It demonstrates the architecture and patterns; it is not the production system, and it still lacks authentication, idempotency and other features a production wallet needs (see the Roadmap).
 
 ## ✨ Key Features
 
@@ -97,15 +97,13 @@ Each service follows Clean Architecture principles:
 
 ### Infrastructure
 - **Docker & Docker Compose**: Container orchestration
-- **RabbitMQ**: Message broker (ready for event bus)
-- **Kafka**: Event streaming (ready for event bus)
+- **RabbitMQ**: Message broker (planned event bus)
 - **MongoDB**: NoSQL database (configured)
 - **Redis**: Caching (configured)
 - **Seq**: Log aggregation and visualization
 
 ### Development Tools
 - **Swagger/OpenAPI**: API documentation
-- **Kafka UI**: Kafka management interface
 
 ## 🚀 Getting Started
 
@@ -132,8 +130,6 @@ This starts:
 - MongoDB (27017)
 - Redis (6379)
 - RabbitMQ (5672, Management UI: 15672)
-- Kafka + Zookeeper (29092, 2181)
-- Kafka UI (8080)
 - Seq (5341)
 
 3. **Update database connection strings**
@@ -191,7 +187,6 @@ dotnet run
   - Swagger: https://localhost:7003/swagger
 
 - **RabbitMQ Management**: http://localhost:15672 (guest/guest)
-- **Kafka UI**: http://localhost:8080
 - **Seq Logs**: http://localhost:5341
 
 ## 📖 API Documentation
@@ -320,7 +315,7 @@ DigitalWallet/
 ## 🚧 Roadmap
 
 - [ ] Add authentication service (JWT/OAuth)
-- [ ] Implement event bus with RabbitMQ/Kafka
+- [ ] Implement event bus with RabbitMQ
 - [ ] Add API Gateway (Ocelot/YARP)
 - [ ] Implement distributed caching with Redis
 - [ ] Add integration tests
